@@ -1,4 +1,4 @@
-package RT::Extension::AutoResolve
+package RT::Extension::AutoResolve;
 use strict;
 use warnings;
 
