@@ -1,6 +1,10 @@
 <script>
+
 jQuery('document').ready(function() {
   "use strict";
-console.log('foo');
-};
+
+  console.log('foo');
+
+});
+
 </script>
