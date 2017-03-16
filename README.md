@@ -1,0 +1,1 @@
+# RT-Extension-AutoResolve
