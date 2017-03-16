@@ -3,7 +3,16 @@
 jQuery('document').ready(function() {
   "use strict";
 
-  console.log('foo');
+  var form   = jQuery('form[name=TicketUpdate]');
+  var action = form.find('input[name=Action]').val();
+  if ( action === 'Respond' ) {
+    var select = jQuery('select[name=Status]');
+    var status = select.find('option:selected');
+    if (status.text().match(/^new.*/)) {
+      var resolved_option = select.find('option[value=resolved]');
+      resolved_option.prop('selected', true);
+    }
+  }
 
 });
 
